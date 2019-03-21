@@ -30,3 +30,5 @@ eos-action-dumper <accounts> [Options]
 ```bash
 eos-action-dumper tonartstoken ctserver2111 --watch 2000
 ```
+
+![cli example](./eos-actions-dumper-cli.png)
