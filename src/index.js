@@ -1,5 +1,5 @@
 import { Dumper } from "./dumper"
-import { important, logInfo } from "./log"
+import { important, logError, logInfo } from "./log"
 
 export * from "./db"
 export * from "./dumper"
@@ -17,7 +17,11 @@ export const batch = async (accounts, mongoUrl, retryTimeSpan = 10000) => {
         while (true) {
             console.log("Sync Round ", count++)
             for (const i in accounts) {
-                await run(accounts[i], mongoUrl, -1)
+                try {
+                    await run(accounts[i], mongoUrl, -1)
+                } catch (ex) {
+                    logError("dump actions for account", accounts[i], "failed\n", ex.message)
+                }
             }
             if (retryTimeSpan < 0) {
                 break

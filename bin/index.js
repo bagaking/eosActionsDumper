@@ -34,4 +34,4 @@ if (accounts.length <= 0) {
     process.exit(0)
 }
 
-batch(accounts, argv.url, argv.watch)
+batch(accounts.filter(s => s), argv.url, argv.watch)
