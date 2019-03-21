@@ -1,10 +1,10 @@
 {
   "name": "eos-actions-dumper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tools for dumping eos actions to mongodb",
   "main": "lib/index.js",
   "bin": {
-    "eos-actions-dumper": "./bin"
+    "eos-actions-dumper": "./bin/index.js"
   },
   "scripts": {
     "build": "rimraf ./lib/ && babel ./src --experimental --source-maps-inline -d ./lib --copy-files LICENSE README.md",
