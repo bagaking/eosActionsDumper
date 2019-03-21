@@ -1,0 +1,9 @@
+{
+  "extends": ["standard"],
+  "rules": {
+    "indent": ["error", 4],
+    "quotes": ["error", "double"],
+    "no-unused-vars": 0,
+    "prefer-const": "error"
+  }
+}
