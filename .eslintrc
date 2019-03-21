@@ -4,6 +4,7 @@
     "indent": ["error", 4],
     "quotes": ["error", "double"],
     "no-unused-vars": 0,
-    "prefer-const": "error"
+    "prefer-const": "error",
+    "no-unmodified-loop-condition": "off"
   }
 }
