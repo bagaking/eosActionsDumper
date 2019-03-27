@@ -32,7 +32,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "debug": "^4.1.1",
-    "eosplayer": "^0.5.9",
+    "eosplayer": "^0.5.11",
     "kht": "^0.0.8",
     "mongoose": "^5.4.19",
     "yargs": "^13.2.2"
