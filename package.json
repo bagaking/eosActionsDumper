@@ -1,6 +1,6 @@
 {
   "name": "eos-actions-dumper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tools for dumping eos actions to mongodb",
   "main": "lib/index.js",
   "bin": {

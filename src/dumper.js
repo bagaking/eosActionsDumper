@@ -82,7 +82,7 @@ export class Dumper {
                     }
                 }
                 actions = subActions
-                logError(actions.length > 0
+                logError(actions.length <= 0
                     ? "   throw away"
                     : `   try use subArray at ${pos} : from ${actions[0]._id} to ${actions[actions.length - 1]._id}`)
             }
